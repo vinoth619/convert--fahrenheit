@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>celsius to fahrenheit converting</h1>
+      <input type="text" placeholder="eneter the celsius value" id="cel">
+      <button onclick="convert()">convert</button>
+      <h1 id="show"></h1>
+      <script>
+        function convert(){
+            let cel= document.getElementById("cel")
+                cel=Number(cel.value)
+                let fah=0;
+                  fah=(9/5 * cel) + 32.
+                  document.getElementById("show").innerHTML=fah+`&#176;f`
+                  
+        }
+      </script>
+    
+</body>
+</html>
